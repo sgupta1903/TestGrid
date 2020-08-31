@@ -20,7 +20,7 @@ public class SeleniumBasic2 {
     @Test
     public void helloGoogleTest2() throws Exception {
         DesiredCapabilities capability = DesiredCapabilities.chrome();
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), capability);
+        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
         driver.get("http://www.facebook.com");
 
         WebDriver augmentedDriver = new Augmenter().augment(driver);
