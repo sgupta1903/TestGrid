@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" parallel="tests" group-by-instances="true" thread-count="2">
+    <test  name="testapp" >
+        <classes>
+
+            <class name="com.example.julianharty.seleniumbasics.SeleniumBasic" />
+        </classes>
+    </test>
+
+    <test  name="testapp2" >
+        <classes>
+
+            <class name="com.example.julianharty.seleniumbasics.SeleniumBasic2" />
+        </classes>
+    </test>
+
+</suite>
