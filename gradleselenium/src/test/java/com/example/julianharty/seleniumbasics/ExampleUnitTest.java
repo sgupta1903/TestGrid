@@ -1,8 +1,11 @@
 package com.example.julianharty.seleniumbasics;
 
-import org.junit.Test;
+package com.example.julianharty.seleniumbasics;
 
-import static org.junit.Assert.*;
+import org.testng.annotations.Test;
+
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
