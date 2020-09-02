@@ -20,7 +20,8 @@ public class SeleniumBasic {
     @Test
     public void helloGoogleTest() throws Exception {
         DesiredCapabilities capability = DesiredCapabilities.chrome();
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+        capability.setCapability("jenkins.nodeName","(master)");
+        WebDriver driver = new RemoteWebDriver(new URL("http://jenkins.mydomain:4444/wd/hub"), capability);
         driver.get("http://www.google.co.uk/");
 
         WebDriver augmentedDriver = new Augmenter().augment(driver);
