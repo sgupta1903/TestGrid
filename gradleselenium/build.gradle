@@ -13,10 +13,15 @@ def testGrid = project.hasProperty("testGrid")
 
 task suiteRunner(type: Test) {
     useTestNG() {
+        def prop = new Properties()
         if (testGrid) {
+            prop.setProperty("os", "window")
+            prop.setProperty("browserLaunch", "headless")
+            dependsOn cleanTest
             useDefaultListeners = true
+            prop.store(myfile.newWriter(), null)
             suites "src/test/resources/testGrid.xml"
-        }
+           }
     }
 }
 
