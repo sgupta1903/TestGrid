@@ -19,7 +19,6 @@ task suiteRunner(type: Test) {
             prop.setProperty("browserLaunch", "headless")
             dependsOn cleanTest
             useDefaultListeners = true
-            prop.store(myfile.newWriter(), null)
             suites "src/test/resources/testGrid.xml"
            }
     }
