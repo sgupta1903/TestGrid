@@ -15,9 +15,6 @@ task suiteRunner(type: Test) {
     useTestNG() {
         def prop = new Properties()
         if (testGrid) {
-            prop.setProperty("os", "window")
-            prop.setProperty("browserLaunch", "headless")
-            dependsOn cleanTest
             useDefaultListeners = true
             suites "src/test/resources/testGrid.xml"
            }
