@@ -1,6 +1,6 @@
 package com.example.julianharty.seleniumbasics;
 
-package com.example.julianharty.seleniumbasics;
+
 
 import org.testng.annotations.Test;
 
